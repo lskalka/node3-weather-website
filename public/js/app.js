@@ -25,7 +25,8 @@ weatherForm.addEventListener('click', (e) => {
                 return console.log('Error', data.error)
             } else {
                 messageOne.textContent = `Weather at Location: ${data.location}`
-                messageTwo.textContent = `${data.temperature} degrees (feels like ${data.feelslike} degreees). ${data.description}`
+                messageTwo.textContent = `${data.temperature} degrees (feels like ${data.feelslike} degreees). 
+                    ${data.description}. Humiditiy is ${data.humidity}`
                 console.log(data)
             }
         })

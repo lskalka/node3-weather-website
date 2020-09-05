@@ -62,15 +62,15 @@ app.get('/weather', (req, res) => {
                 return res.send({ error: weatherError})
             }
 
-            const { temperature, feelslike, description } = weatherData
+            const { temperature, feelslike, description, humidity } = weatherData
 
             res.send({
                 address,
                 location,
                 temperature,
                 feelslike,
-                description
-                
+                description,
+                humidity
             })
         })
     })
